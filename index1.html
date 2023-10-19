@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>❤</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			/*外边距  上下 左右*/
+		}
+
+		.heart {
+			position: relative;
+			width: 250px;
+			height: 250px;
+			background-color: ;
+			margin: 60px auto;
+		}
+
+		.heart:before {
+			content: "";
+			/*激活伪元素必要因素*/
+			position: absolute;
+			/*绝对定位属性  不受父级约束 */
+			top: 0;
+			left: 0;
+			width: 100px;
+			height: 160px;
+			background-color: red;
+			border-radius: 50px 50px 0px 0px;
+
+			transform: rotate(-45deg);
+			/*旋转 -左 +右*/
+		}
+
+		/*before和after在元素内容前后加入指定内容（伪类）*/
+		.heart:after {
+			content: "";
+			/*激活伪元素必要因素*/
+			position: absolute;
+			/*绝对定位属性  不受父级约束 */
+			top: 0;
+			left: 0;
+			width: 100px;
+			height: 160px;
+			background-color: red;
+			border-radius: 50px 50px 0px 0px;
+			transform: translate(43px) rotate(45deg);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="heart"></div>
+
+</body>
+
+</html>
